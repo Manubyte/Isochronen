@@ -33,7 +33,7 @@ Vorgestellt wird das Vorgehen zum Erstellen von Isochronen des ÖPNV. Das Tool v
 
 ## Schritt-für-Schritt Anleitung:
 
-1) Vorbereitung in QGIS:
+### 1) Vorbereitung in QGIS:
 - QGIS: Händisches Erstellen eines Polygonlayer für das gewünschte Gewerbegebiet [Layer > Create "hiddenSpellError">new Layer > New Shapefile Layer...].
 - QGIS: Erstellen eines konkreten Polygon, welches das Gewerbegebiet umreist [Toggle Editing > Add Polygon Feature > "erstellen des gewünschten Polygons" > Save Layer Edits > Toggle Editing].
 - QGIS: Importiere stops.txt aus dem gtfs Datensatz in das Projekt [Layer > Add Layer > Add Delimited Text Layer...].
@@ -42,7 +42,7 @@ Vorgestellt wird das Vorgehen zum Erstellen von Isochronen des ÖPNV. Das Tool v
 - QGIS/Graphical Modeler: run model (Plugin Version 1.4. benötigt).
 - QGIS: speichere das Ergebnis des Matrix batch als "ors_transfers.csv". Speicherordner ist der Projektordner des Untersuchungsgebietes.
 
-2) Berechnung der erreichbaren Haltestellen
+### 2) Berechnung der erreichbaren Haltestellen
 - Python: öffne analyst.py
 - Python: lege die Parameter fest:
 	- filepath zu GTFS Datensatz
@@ -52,7 +52,7 @@ Vorgestellt wird das Vorgehen zum Erstellen von Isochronen des ÖPNV. Das Tool v
 	- Maximale Anzahl an Umstiegen festlegen.
 - Python: Zurücklegen, entspannen und warten.
 
-3) Nachbereitung:
+### 3) Nachbereitung:
 - QGIS: fasse die einzelnen Isochronen zu einem Layer zusammen [Processing Toolbox > Vector general > Merge vector layer].
 - QGIS/Merge vector layer: wähle alle single_iso Dateien mit demselben Präfix aus [inout layers > add file(s)...]
 - QGIS: verschmelze die einzelnen Polygone des soeben erstellten Layer [Processing Toolbox > Vector geometry > Dissolve].
