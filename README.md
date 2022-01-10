@@ -34,7 +34,7 @@ Vorgestellt wird das Vorgehen zum Erstellen von Isochronen des ÖPNV. Das Tool v
 ## Schritt-für-Schritt Anleitung:
 
 ### 1) Vorbereitung in QGIS:
-- QGIS: Händisches Erstellen eines Polygonlayer für das gewünschte Gewerbegebiet [Layer > Create "hiddenSpellError">new Layer > New Shapefile Layer...].
+- QGIS: Händisches Erstellen eines Polygonlayer für das gewünschte Gewerbegebiet [Layer > Create Layer > New Shapefile Layer...].
 - QGIS: Erstellen eines konkreten Polygon, welches das Gewerbegebiet umreist [Toggle Editing > Add Polygon Feature > "erstellen des gewünschten Polygons" > Save Layer Edits > Toggle Editing].
 - QGIS: Importiere stops.txt aus dem gtfs Datensatz in das Projekt [Layer > Add Layer > Add Delimited Text Layer...].
 - QGIS: öffne den Graphical Modeller [Processing > Graphical Modeler...].
